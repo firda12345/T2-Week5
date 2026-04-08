@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 600px) {
+    .card { 
+        width: 100%; /* Di HP, card dibuat melebar penuh agar terbaca */
+        margin-bottom: 20px;
+    }
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;     /* Sebar elemen: satu ke kiri, satu ke kanan */
+    align-items: center;
+    padding: 20px 10%;
+    width: 100%;
+    background-color: #e0e1ec;
+    color: rgb(41, 45, 63);
+    z-index: 1000;
+}
+.nav-link{
+    display: flex;          /* berjejer horizontal */
+    list-style: none;  
+    margin: 0px;
+    padding: 0%;
+}
+.nav-link li {
+    margin-left: 20px;      /* memberi jarak per kata */
+}
+.nav-link a {
+    color: rgb(41, 45, 63);
+    text-decoration: none;  /* menghilangkan garis bawah */
+    transition: 0.3s; 
+}
+.nav-link a:hover {
+    color: #3498db;     /* memberikan efek warna ketika di sentuh */
+}
+
+.section_1{
+    text-align: center;
+    padding: 150px 50px 50px 100px;
+    justify-content: center;
+    color: rgb(124, 88, 129);
+}
+.section_conten{
+    color: black;
+}
+img {
+  border-radius: 100px;
+  padding: 15px;
+  width: 150px;
+}
+
+.main-title{
+    padding: 50px 0px 50px 50px;
+    text-align: center;
+}
+.main-content{
+    padding: 0px 20px 0px 20px;
+}
+.main-main{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #cecdcd;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(124, 88, 129);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+.card h5{
+    margin: 10px 0;
+    font-weight: 700;
+}
+.card:hover {
+    transform: translateY(-10px); /* Efek melayang saat kursor di atasnya */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover*/ 
+} 
+.algosea{
+    border-radius: 50px;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+.footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(41, 45, 63);
+    padding: 20px 10%;
+    width: 100%;
+    border-top: 1px solid#cecdcd;
+    margin-top: 40px;
+}
+.footer p {
+    font-size: 14px;     
+    opacity: 0.8;           
+}
+
